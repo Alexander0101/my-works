@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e9e9e9;
+    font-family: 'Hind', Arial, sans-serif;
+}
+
+.header {
+    color: #fff;
+    background-color: #3a7dfd;
+    background-image: linear-gradient(-147deg, #778fdc 0%, #4c71cd 100%);
+}
+
+.header-main {
+    text-align: center;
+}
+
+.header-main__title {
+    padding: 75px 0 18px 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.header-main__description {
+    padding: 18px 0;
+    font-size: 18px;
+}
+
+.header-main__social a {
+    display: inline-block;
+    margin: 0 8px 25px 8px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.header-main__social a:hover {
+    opacity: 0.4;
+}
+
+.content-main {
+    background: #fff;
+    margin: 60px 0;
+    padding: 0 36px;
+}
+
+.content-main__title {
+    padding: 30px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+.content-main__work {
+    padding: 24px;
+    margin-bottom: 40px;
+    background: #e9e9e9;
+    opacity: 0;
+}
+
+.page_one {
+    animation: showing 2s ease 1s;
+    animation-fill-mode: forwards;
+}
+
+.page_two {
+    animation: showing 2s ease 2s;
+    animation-fill-mode: forwards;
+}
+
+.page_three {
+    animation: showing 2s ease 3s;
+    animation-fill-mode: forwards;
+}
+
+.page_four {
+    animation: showing 2s ease 4s;
+    animation-fill-mode: forwards;
+}
+
+.page_five {
+    animation: showing 2s ease 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showing {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content-main__work-img img {
+    width: 100%;
+    height: 400px;
+}
+
+.content-main__work-title {
+    font-size: 18px;
+    color: #1e1e1e;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content-main__work-link a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    background: #3a7dfd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.content-main__work-link a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5em;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+}
+
+.content-main__work-link a:hover:before {
+    animation: move-light 0.8s;
+}
+
+@keyframes move-light {
+    from {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+
+    to {
+        transform: translateX(10em) skewX(-45deg);
+    }
+}
+
+.content-main__work-link {
+    text-align: center;
+}

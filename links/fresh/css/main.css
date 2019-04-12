@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Hind', Arial, sans-serif;
+    color: #737373;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-info {
+    margin-top: 70px;
+    margin-bottom: 90px;
+    font-weight: bold;
+    background: #00a1eb;
+}
+
+.btn-info:hover {
+    text-decoration: none;
+}
+
+.header {
+    background: url('../images/header-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.header-menu li {
+    display: inline-block;
+}
+
+.header-menu a {
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-menu {
+    padding-top: 40px;
+    background: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.btn-telefon {
+    position: relative;
+    top: -3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 12px 10px;
+    float: right;
+}
+
+.btn-telefon:hover {
+    text-decoration: underline;
+}
+
+.pull-left_link {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.pull-left_link__fw {
+    font-weight: 400;
+}
+
+.pull-left_link__fw-other {
+    font-weight: 100;
+}
+
+.header__page-name {
+    margin-top: 220px;
+    text-align: center;
+    letter-spacing: 12px;
+    color: #fff;
+}
+
+.header__page-slogan {
+    padding-top: 32px;
+    padding-bottom: 220px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.main {
+    padding-top: 130px;
+}
+
+.section__title {
+    font-weight: bold;
+    color: #00a1eb;
+}
+
+.section__separate {
+    display: inline-block;
+    width: 80px;
+    margin: 24px 0;
+    border-color: #a1a1a1;
+}
+
+.section__text_info {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: #00a1eb;
+}
+
+.section__img {
+    position: relative;
+}
+
+.section__img img {
+    width: 100%;
+}
+
+.section__img_text {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn-info__mt {
+    margin-top: 30px;
+}
+
+.section__text-mb {
+    margin-bottom: 50px;
+}
+
+.wrap-slider {
+    position: relative;
+    font-size: 0;
+}
+
+.slick-slide img {
+    margin: 0 auto;
+}
+
+.slider-box {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.slider-box__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    color: #fff;
+}
+
+.slider-info__title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.slider-info__description {
+    margin-top: 12px;
+    font-size: 1.5rem;
+}
+
+.slider-info__btn {
+    display: none;
+    margin-top: 12px;
+}
+
+.slider-box:hover .slider-info__btn {
+    display: inline-block;
+}
+
+.btn-slider {
+    position: absolute;
+    top: 50%;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #0da6ec;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btn-prev {
+    left: 15px;
+}
+
+.btn-prev:before,
+.btn-prev:after,
+.btn-next:before,
+.btn-next:after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 14px;
+    background: #0da6ec;
+}
+
+.btn-next {
+    right: 15px;
+}
+
+.btn-prev:before,
+.btn-next:before {
+    transform: rotate(45deg);
+}
+
+.btn-prev:after,
+.btn-next:after {
+    transform: rotate(-45deg);
+}
+
+.btn-prev:before,
+.btn-prev:after {
+    transform-origin: 0 0;
+    left: 8px;
+}
+
+.btn-next:before,
+.btn-next:after {
+    transform-origin: 100% 0;
+    right: 8px;
+}
+
+.btn-price {
+    margin-top: 55px;
+}
+
+.col-4-bg {
+    padding-top: 60px;
+    padding-bottom: 75px;
+    background: #f8f8f8;
+}
+
+.title-block {
+    margin-bottom: 24px;
+}
+
+.kontakt-fw {
+    font-weight: bold;
+}
+
+.wrap-map {
+    height: 500px;
+}
+
+.wrap-contact-info {
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    right: 0;
+}
+
+.contact-info:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #2eb2ef;
+    transform-origin: 100% 0;
+    transform: skewX(12deg);
+}
+
+.section-info {
+    position: absolute;
+    padding: 110px 55px 0 120px;
+    z-index: 1;
+}
+
+.section__text_color {
+    color: #fff;
+}
+
+.btn-kontakt {
+    margin-top: 40px;
+    color: #2eb2ef;
+    background: #fff;
+}
+
+.footer {
+    background: #2b2b2b;
+}
+
+.footer p {
+    margin: 55px 0;
+    font-weight: bold;
+    color: #d5d5d5;
+}
+
+.sprite {
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    background-image: url(../images/spritesheet.png);
+}
+
+.catering {
+    background-position: 388px -16px;
+}
+
+.sprzedaz {
+    background-position: -420px 186px;
+}
+
+.dostawy {
+    background-position: 388px 186px;
+}
+
+.sprite:hover {
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    border: 2px solid #00a1eb;
+    border-radius: 50%;
+    background-image: url(../images/spritesheet.png);
+}
+
+.catering:hover {
+    background-position: 592px -16px;
+}
+
+.sprzedaz:hover {
+    background-position: -420px 382px;
+}
+
+.dostawy:hover {
+    background-position: 584px 186px;
+}

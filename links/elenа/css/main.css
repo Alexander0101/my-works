@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	color: #787b80;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+h1 {
+	font-size: 6rem;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #000;
+}
+
+section {
+	padding: 60px 0;
+}
+
+.btn {
+    padding: 16px 40px;
+    font-weight: bold;
+    border-radius: 24px;
+}
+
+.wrap-header {
+	position: relative;
+}
+
+.header {
+	position: relative;
+	color: #fff;
+	background: url('../images/bg.jpg') center center no-repeat;
+	background-size: cover; 
+}
+
+.header:before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.name-page {
+	margin: 65px 0 50px 0;
+	font-family: 'Lobster', cursive;
+	font-size: 5rem;
+}
+
+.header-menu {
+	margin-bottom: 60px;
+}
+
+.header-menu li {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.header-menu li:last-child {
+	margin-right: 0;
+}
+
+.header-menu a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.slogan {
+	font-weight: bold;
+}
+
+.slogan p {
+	margin: 35px 0 80px 0;
+}
+
+.btn-header {
+	margin-bottom: 120px;
+	background: #50c3af;
+}
+
+.default-bg {
+	background: #eeeeef;
+}
+
+.default-bg__other {
+	background: #50c3af;
+}
+
+.default-bg__color, .footer {
+	background: #f5f5f5;
+}
+
+.section__separate {
+	display: inline-block;
+	width: 50%;
+	height: 2px;
+	margin: 20px 0;
+	background: #e2e3e4;
+}
+
+.section__separate_other {
+	width: 100%;
+}
+
+.pd {
+	padding: 0 50px;
+}
+
+.part-name {
+	margin-top: 45px;
+	text-transform: uppercase;
+	color: #40474e;
+}
+
+.btn-other {
+	margin: 30px 0;
+   	padding: 10px 25px;
+    font-weight: normal;
+    border-radius: 24px;
+	color: #fff;
+	font-size: 1.5rem;
+	background: #50c3af;
+}
+
+.btn-other__bg {
+	background: #d2d5da;
+}
+
+.link-part {
+	color: #88d1c3;
+}
+
+.wrap-part {
+	margin-bottom: 25px;
+}
+
+.part-name > img {
+	margin-right: 25px;
+}
+
+.logo {
+	margin: 25px 0;
+}
+
+.footer {
+	padding: 20px 0;
+}
+
+.other-text {
+	color: #aaacaf;
+}
+
+.social {
+	display: inline-block;
+	content: '';
+	width: 18px;
+	height: 18px;
+	margin-left: 20px;
+	background-image: url(../images/social-element.png);
+	cursor: pointer;
+}
+
+.social-g {
+	background-position: 0 0;
+}
+
+.social-fb {
+	background-position: 125px 0;
+}
+
+.social-tw {
+	background-position: 17px 0;
+}
+
+@media screen and (max-width: 500px) {
+	.header-menu li {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.header-menu a:hover {
+		border-bottom: none;
+	}
+	.header-menu a {
+		font-weight: bold;
+	}
+	.logo {
+		margin: 25px 0;
+		text-align: center;
+	}
+}
